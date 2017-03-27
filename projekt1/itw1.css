@@ -1,0 +1,166 @@
+/***************************** Global setting *********************************/
+html {
+    font-size: 11pt;
+    font-family: Arial, sans-serif;
+    color: #585858;
+    display: table;
+    margin: auto;
+}
+* {
+    max-width: 1920px;
+}
+
+body {
+    display: table;
+    vertical-align: middle;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: #585858;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/********************************* Header *************************************/
+#head {
+    background-image: url('./images/topfoto.jpg');
+    background-repeat: no-repeat;
+    height: 768px;
+    overflow: hidden;
+}
+
+/* setting h1 */
+#head h1 {
+    float: left;
+}
+
+#head h1 a {
+    width: 150px;
+    height: 60px;
+    display: inline-block;
+    background-image: url('./images/logo.png');
+}
+
+#head h1 span {
+    visibility: hidden;
+}
+
+#head .hidden {
+    display: none;
+}
+
+/* setting grey block */
+#head .content {
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: rgba(120, 120, 120, 0.5);
+    height: 100px;
+    max-width: 1830px;
+    padding-left: 30px;
+}
+
+/* setting menu */
+#head #menu {
+    float: right;
+    width: 450px;
+}
+
+#head #menu ul.main, #head #menu div#lang{
+    float: left;
+}
+
+#menu .main li {
+    display: inline-block;
+    font-style: oblique;
+    margin: 20px 10px;
+    font-size: 18px;
+}
+
+#menu .main li a {
+    color: white;
+}
+
+#menu .main li a:hover {
+    text-decoration: none;
+    color: #363636;
+}
+
+#menu span {
+    color: white;
+    font-style: oblique;
+    position: relative;
+    top: 34px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#menu span::after {
+    position: relative;
+    left: 10px;
+    content: url('./images/select.png');
+}
+
+#menu span:hover {
+    color: #363636;
+}
+
+ul.lang {
+    display: none;
+}
+
+ul.lang li{
+    min-width: 50px;
+    background: #f2f2f2;
+    display: block;
+    position: relative;
+    right: 40px;
+    top: 20px;
+}
+
+div#lang {
+    width: 50px;
+}
+
+div#lang:hover ul {
+    display: block;
+}
+/******************************************************************************/
+div#ccontainer {
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    bottom: 400px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: -150px;
+}
+
+div#ccontainer a {
+    color: white;
+    font-style: italic;
+}
+
+div#ccontainer strong {
+    color: orange;
+    font-style: normal !important;
+    font-style: italic !important;
+}
+
+/******************************************************************************/
+div.cols {
+    overflow: hidden;
+    display: table;
+    margin: auto;
+}
+
+div.col {
+    display: table-cell;
+    width: 420px;
+    margin: 5px;
+}
+

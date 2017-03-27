@@ -1,0 +1,153 @@
+body {
+   width: 960px;
+    background-image:url("bg.jpg");
+    background-color:white;
+    background-repeat: repeat-x;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto 0 auto;
+    padding: 0 0 0 0;
+    min-width: 850px;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    background-color:#656565;
+    display: table;
+    margin: auto;
+    padding:0px 10% 0px 10%;
+    font-family: Arial, Helvetica;
+    color: #656565;
+    font-size: 13px;
+    line-height: 150%;
+    word-spacing: 2px;
+/*    letter-spacing: 1px;*/
+}
+
+h1 {
+    font-style: italic;
+    font-size: 20px;
+    color: #d5a17c;
+    display: block;
+}
+
+h1 a {
+    display: block;
+    color: white;
+    position: relative;
+    bottom: 15px;
+    font-size: 40px;
+}
+
+h2 {
+    color: #b15e23;
+}
+
+h3 a {
+    color: #3c1f0a;
+    border-bottom: 1px dotted #000;
+    display: block;
+}
+
+/*img {
+    display: block;
+}*/
+
+.top_menu {
+    display: table;
+    width: 100%;
+    margin: 70px 0 0 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.top_menu a {
+    color: white;
+    display: block;
+}
+
+.top_menu a:after {
+    content: url("./menu_bullet.gif");
+    display: block;
+    align-items: center;
+    visibility: hidden;
+}
+
+.top_menu a:hover:after {
+    visibility: visible;
+}
+
+.top_menu li {
+    display: table-cell;
+    padding: 0 10px 0 10px;
+}
+
+.top_menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+#about_itw {
+    padding-bottom: 115px;
+}
+
+#middle table {
+	border: 3px solid black;
+	text-align: center;
+}
+
+#middle th {
+	padding: 5px 10px 5px 10px;
+	border-top: 1px dotted black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px dotted black;
+}
+
+#middle td {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#middle .table_head {
+	background-color: #d5a17c;
+}
+
+.blc {
+	display: block;
+}
+
+.do_align {
+	padding: 20px 4% 0 4%;
+}
+
+#bottom {
+    background-image:url("footer_bg.gif");
+    background-color:white;
+    padding-bottom:10px;
+}
+
+#bottom a {
+	color: #d5a17c;
+}
+
+#bottom ul {
+	list-style-image: url('footer_list_bullet.gif')
+}
+
+#bottom dt:before {
+	content: "";
+	display: block;
+}
+
+#bottom dt, dd {
+	display: inline;
+}
+
+#page {
+    max-width: 1200px;
+    padding: 18px 0 0 0;
+}
