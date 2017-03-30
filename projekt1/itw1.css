@@ -16,6 +16,10 @@ h1, h2 {
     font-style: italic;
 }
 
+p, li {
+    line-height: 150%;
+}
+
 * {
     max-width: 1920px;
 }
@@ -43,6 +47,7 @@ a:hover {
     margin-top: 0px;
     min-width: 650px;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 /* setting h1 */
@@ -96,7 +101,7 @@ a:hover {
 }
 
 #menu .main li a {
-    color: white;
+    color: rgb(230, 230, 230);
 }
 
 #menu .main li a:hover {
@@ -105,7 +110,6 @@ a:hover {
 }
 
 #menu span {
-    color: white;
     position: relative;
     top: 34px;
     font-size: 18px;
@@ -187,9 +191,7 @@ div#ccontainer strong {
 
 /******************************************************************************/
 div.cols {
-    display: table;
     overflow: hidden;
-    margin: auto;
 }
 
 div.col {
@@ -201,14 +203,14 @@ div.col {
 /******************************************************************************/
 
 .content {
-    padding-top: 20px;
     margin: auto;
+    padding-top: 20px;
     width: 100%;
     max-width: 1295px;
 }
 
 .content h2 {
-    margin: 60px;
+    margin-top: 20px;
     font-size: 30pt;
     text-align: center;
 }
@@ -217,6 +219,7 @@ div.col {
     padding: 15px 0;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    margin-bottom: 60px;
 }
 
 .full p {
@@ -241,6 +244,7 @@ div.col {
 /******************************************************************************/
 #topgal {
     overflow: hidden;
+    padding-bottom: 60px;
 }
 
 #topgal span {
@@ -280,10 +284,20 @@ div.col {
     font-size: 20pt;
     margin: 10px;
 }
+
+#nature {
+    margin-top: 20px;
+    background-color: rgb(250, 250, 250);
+    margin-bottom: 0px;
+    padding-bottom: 80px;
+}
+
 /******************************************************************************/
 #contact {
+    margin-top: 0px;
     background: #666666;
     color: white;
+    padding-bottom: 100px;
 }
 
 #contact a {
@@ -298,7 +312,11 @@ div.col {
     border-bottom: none;
     border-color: white;
     clear: both;
-    padding-bottom: 100px;
+    height: 100px;
+}
+
+#contact .full:last-child {
+    border-bottom: 1px solid white;
 }
 
 #contact .full p {
