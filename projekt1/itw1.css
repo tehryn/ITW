@@ -3,16 +3,24 @@ html {
     font-size: 11pt;
     font-family: Arial, sans-serif;
     color: #585858;
-    display: table;
     margin: auto;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-family: 'Times New Roman';
+}
+
+h1, h2 {
+    font-weight: 100;
+    font-style: italic;
+}
+
 * {
     max-width: 1920px;
 }
 
 body {
-    display: table;
-    vertical-align: middle;
     margin: auto;
 }
 
@@ -31,6 +39,9 @@ a:hover {
     background-image: url('./images/topfoto.jpg');
     background-repeat: no-repeat;
     height: 768px;
+    padding-top: 10px;
+    margin-top: 0px;
+    min-width: 650px;
     overflow: hidden;
 }
 
@@ -56,18 +67,21 @@ a:hover {
 
 /* setting grey block */
 #head .content {
+    margin: auto;
+    width: 100%;
+    min-width: 600px;
+    max-width: 1290px;
     margin-top: 10px;
-    margin-left: 30px;
     background-color: rgba(120, 120, 120, 0.5);
     height: 100px;
-    max-width: 1830px;
     padding-left: 30px;
 }
 
 /* setting menu */
-#head #menu {
+#menu {
+    position: relative;
+    right: 40px;
     float: right;
-    width: 450px;
 }
 
 #head #menu ul.main, #head #menu div#lang{
@@ -92,7 +106,6 @@ a:hover {
 
 #menu span {
     color: white;
-    font-style: oblique;
     position: relative;
     top: 34px;
     font-size: 18px;
@@ -106,28 +119,49 @@ a:hover {
 }
 
 #menu span:hover {
+    cursor: pointer;
     color: #363636;
 }
 
 ul.lang {
     display: none;
+    padding-left: 0;
 }
 
 ul.lang li{
-    min-width: 50px;
+    width: 70px;
+    padding: 5px 0;
     background: #f2f2f2;
     display: block;
     position: relative;
-    right: 40px;
     top: 20px;
 }
 
-div#lang {
+div#lang { /* NESAHAT */
     width: 50px;
+}
+
+.lang li:hover {
+    background-color: #363636;
+}
+
+.lang li:hover a{
+    color: white;
+}
+
+.lang a {
+    display: block;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 12pt;
 }
 
 div#lang:hover ul {
     display: block;
+}
+
+div#top {
+    clear: both;
 }
 /******************************************************************************/
 div#ccontainer {
@@ -138,6 +172,7 @@ div#ccontainer {
     width: 100%;
     margin: auto;
     margin-bottom: -150px;
+    font-family: 'Times New Roman';
 }
 
 div#ccontainer a {
@@ -147,20 +182,171 @@ div#ccontainer a {
 
 div#ccontainer strong {
     color: orange;
-    font-style: normal !important;
-    font-style: italic !important;
+    font-weight: 100;
 }
 
 /******************************************************************************/
 div.cols {
-    overflow: hidden;
     display: table;
+    overflow: hidden;
     margin: auto;
 }
 
 div.col {
-    display: table-cell;
+    display: inline-block;
+    width: 420px;
+    margin: 5px;
+    float: left;
+}
+/******************************************************************************/
+
+.content {
+    padding-top: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 1295px;
+}
+
+.content h2 {
+    margin: 60px;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.full {
+    padding: 15px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.full p {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.more {
+    position: relative;
+    bottom: 57px;
+    float: right;
+}
+
+.more::before {
+    content: url('./images/plus.png');
+    margin-right: 2px;
+    position: relative;
+    top: 2px;
+}
+/******************************************************************************/
+#topgal {
+    overflow: hidden;
+}
+
+#topgal span {
+    display: none;
+}
+
+#topgal img {
+    float: left;
     width: 420px;
     margin: 5px;
 }
 
+#topgal a:hover img {
+    display: none;
+}
+
+#topgal a:hover {
+    display: table;
+    text-decoration: none;
+    float: left;
+    background: rgb(180, 180, 180);
+    margin: 5px;
+    width: 420px;
+    height: 290px;
+}
+
+#topgal a:hover span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#topgal a:hover span em {
+    display: block;
+    font-style: italic;
+    font-family: 'Times New Roman';
+    font-size: 20pt;
+    margin: 10px;
+}
+/******************************************************************************/
+#contact {
+    background: #666666;
+    color: white;
+}
+
+#contact a {
+    color: white;
+}
+
+#contact strong {
+    color: orange;
+}
+
+#contact .full {
+    border-bottom: none;
+    border-color: white;
+    clear: both;
+    padding-bottom: 100px;
+}
+
+#contact .full p {
+    float: left;
+    margin: 20px 0;
+    width: 30%;
+}
+
+#contact .full p:nth-of-type(2n+3) {
+    margin-left: 30%;
+}
+
+#contact h3 {
+    float: left;
+    width: 30%;
+    margin: 10px 0 0 0;
+    font-size: 20pt;
+}
+/******************************************************************************/
+
+#foot .content {
+    overflow: hidden;
+    margin-bottom: -30px;
+    margin-top: 20px;
+}
+
+#foot .copy {
+    font-weight: 100;
+    float: left;
+}
+
+#foot .contact {
+    float:right;
+}
+
+/******************************************************************************/
+a.up.anchor {
+    display: inline-block;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    margin-left: 50%;
+    margin-right: 50%;
+    background-image: url('./images/up.png');
+    background-repeat: no-repeat;
+}
+
+a.up.anchor span {
+    visibility: hidden;
+    height: 20px;
+}
