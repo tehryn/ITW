@@ -1,0 +1,34 @@
+p {
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-size: 0.85em;
+    padding: 5px;
+    margin:0;
+    background:rgb(180, 220, 180);
+    border-radius: 5px;
+}
+div#inner-frame {
+	background: rgb(180, 180, 180);
+	box-shadow: 10px 10px 5px gray;
+	border: 4px solid transparent;
+	border-image: url(./images/border.png) 5 stretch;
+	padding: 10px;
+}
+
+div#outer-frame {
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 150px;
+	width:400px;
+	background:	url(./images/blue/tr.png) top right no-repeat,
+				url(./images/blue/tl.png) top left no-repeat,
+				url(./images/blue/bl.png) bottom left no-repeat,
+				url(./images/blue/br.png) bottom right no-repeat,
+				url(./images/blue/t.png) top repeat-x,
+				url(./images/blue/b.png) bottom repeat-x,
+				url(./images/blue/l.png) left repeat-y,
+				url(./images/blue/r.png)  right repeat-y;
+	background-origin: border-box, border-box, border-box, border-box,
+					   border-box, border-box, border-box, border-box;
+ }
+
