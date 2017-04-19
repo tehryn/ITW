@@ -1,8 +1,10 @@
 html {
-    max-width: 1920px;
-    min-width: 800px;
-    background-color: rgb(124,202,66);
+    max-width: 1960px;
+    min-width: 600px;
+    background-color: rgb(80,122,46);
+    font-family: Arial, sans-serif;
     margin: 0 auto;
+    font-size: 11pt;
 }
 
 body {
@@ -14,6 +16,10 @@ section {
     padding: 10px;
 }
 
+h1, h2, h3 {
+    color: rgb(0, 100, 50);;
+}
+
 a {
     text-decoration: none;
     font-style: normal;
@@ -23,12 +29,25 @@ a {
 a:hover {
     text-decoration: none;
 }
+
 .clear {
     clear: both;
 }
+
+#head {
+    background-color:rgb(95,158,53);
+    border-radius: 10px;
+}
+
+#top {
+    border-radius: 10px;
+}
+
 #head h1 {
     float: left;
     margin: 10px;
+    margin-right: 0px;
+    margin-bottom: -10px;
 }
 
 #head h1 a {
@@ -42,8 +61,10 @@ a:hover {
 #head h1 span {
     visibility: hidden;
 }
+
 #head #menu ul{
     margin: 0;
+    position: relative;
     display: block;
     background-color: rgb(0, 100, 50);
     padding-left: 0;
@@ -55,10 +76,31 @@ a:hover {
 }
 
 #head #menu li:hover{
-    background-color: rgb(95,158,53);
+    background-color: rgb(0,130,50);
     cursor: pointer;
 }
 
 #head #menu li a{
     color: white;
+}
+
+#top_images {
+    float: right;
+}
+
+@media screen and (max-width:940px) {
+    #top_images img:first-child {
+        display: none;
+    }
+    @media screen and (max-width:700px) {
+        #top_images img:nth-child(2) {
+            display: none;
+        }
+    }
+}
+#top_images img {
+    border-radius: 5px;
+    height: 150px;
+    margin: 10px;
+    margin-left: 0px;
 }
