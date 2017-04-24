@@ -4,7 +4,7 @@ html {
     background-color: rgb(80,122,46);
     font-family: Arial, sans-serif;
     margin: 0 auto;
-    font-size: 11pt;
+    font-size: 14pt;
 }
 
 body {
@@ -47,7 +47,7 @@ a:hover {
     float: left;
     margin: 10px;
     margin-right: 0px;
-    margin-bottom: -10px;
+    margin-bottom: 40px;
 }
 
 #head h1 a {
@@ -56,6 +56,7 @@ a:hover {
     display: inline-block;
     background-image: url('./images/logo.png');
     background-size: cover;
+    border-radius: 100%;
 }
 
 #head h1 span {
@@ -104,3 +105,54 @@ a:hover {
     margin: 10px;
     margin-left: 0px;
 }
+
+h2 {
+    position: relative;
+    bottom: 115px;
+    margin-bottom: -60px;
+}
+
+.text_images {
+    text-align: center;
+}
+
+.paragraph h3 {
+    margin-left: 16px;
+    margin-bottom: 3px;
+}
+
+.paragraph p {
+    margin: 4px 16px;
+}
+
+.text_images img {
+    border-radius: 5px;
+    max-width: 24%;
+    margin: 0 4px;
+}
+@media screen and (max-width:1250px) {
+    .text_images img:first-child {
+        display: none;
+    }
+    .text_images img {
+        max-width: 32%;
+        margin: 0 2px;
+    }
+}
+/*.content .paragraph:nth-child(2n) p {
+    width: 50%;
+    float: right;
+}
+.content .paragraph:nth-child(2n) img {
+    width: 50%;
+    float: left;
+}
+
+.content .paragraph:nth-child(2n+1) p {
+    width: 50%;
+    float: left;
+}
+.content .paragraph:nth-child(2n+1) img {
+    width: 50%;
+    float: right;
+}*/
