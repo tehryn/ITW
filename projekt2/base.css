@@ -47,7 +47,6 @@ a:hover {
     float: left;
     margin: 10px;
     margin-right: 0px;
-    margin-bottom: 40px;
 }
 
 #head h1 a {
@@ -108,8 +107,25 @@ a:hover {
 
 h2 {
     position: relative;
-    bottom: 115px;
+    bottom: 180px;
+    left: 160px;
     margin-bottom: -60px;
+}
+@media screen and (max-width:1630px){
+    .h2_hidden {
+        display: none;
+    }
+    @media screen and (max-width:1315px){
+            h2 {
+                position: relative;
+                bottom: 115px;
+                left: 0;
+                margin-bottom: -60px;
+            }
+            #head h1 a {
+                margin-bottom: 40px;
+            }
+    }
 }
 
 .text_images {

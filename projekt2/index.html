@@ -6,6 +6,12 @@
     <meta name="description" content="Myslivecké sdružení Zachotín">
     <link rel="stylesheet" href="base.css" type="text/css">
 	<title>MS Zachotín</title>
+    <script type="text/javascript">
+        function display_author() {
+            var text;
+            document.getElementById("author").innerHTML = "Autor: Matejka Jiri<br>Login: xmatej52<br>";
+        }
+    </script>
 </head>
 <body>
     <div id="page">
@@ -25,11 +31,13 @@
                         <li><a href="#page">Akce</a></li>
                         <li><a href="#page">Kontakt</a></li>
                         <li><a href="#page">Zdroje</a></li>
+                        <li><a href="javascript:display_author();">Autor</a></li>
                 </nav>
             </div>
         </header>
         <section id="text">
-            <h2 id="uvod">Vítejte na stránkách Mysliveckého sdružení Zachotín</h2>
+            <h2 id="uvod"><span class="h2_hidden">Vítejte na stránkách</span> Myslivecké<span class="h2_hidden">ho</span> sdružení Zachotín</h2>
+            <div id="author"></div>
             <div class="content">
                 <div class="paragraph">
                     <h3>Maecenas fermentum</h3>
