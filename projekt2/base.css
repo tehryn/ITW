@@ -9,21 +9,21 @@ html {
 
 body {
     border-radius: 10px;
-    background-color: white;
+    background-color: #B1E87C;
 }
 
 section {
     padding: 10px;
 }
-
+/*
 h1, h2, h3 {
-/*    color: rgb(0, 100, 50);*/
+    color: rgb(0, 75, 30);
 }
-
+*/
 a {
     text-decoration: none;
     font-style: normal;
-    color:rgb(95,158,53);
+    color: rgb(0, 75, 30);
 }
 
 a:hover {
@@ -32,6 +32,14 @@ a:hover {
 
 .clear {
     clear: both;
+}
+
+#author {
+    width: 350px;
+    margin-left: 15px;
+}
+
+#about_me {
 }
 
 #head {
@@ -111,6 +119,9 @@ h2 {
     left: 160px;
     margin-bottom: -60px;
 }
+h2 a {
+    color: rgb(0, 75, 30);
+}
 @media screen and (max-width:1630px){
     .h2_hidden {
         display: none;
@@ -154,21 +165,64 @@ h2 {
         max-width: 32%;
         margin: 0 2px;
     }
+    @media screen and (max-width:700px) {
+        .text_images img:nth-child(2) {
+            display: none;
+        }
+        .text_images img {
+            max-width: 48%;
+            margin: 0 2px;
+        }
+    }
 }
-/*.content .paragraph:nth-child(2n) p {
-    width: 50%;
-    float: right;
+
+#images .content .paragraph .author{
+    display: block;
+    text-align: center;
 }
-.content .paragraph:nth-child(2n) img {
-    width: 50%;
+
+#images .content .paragraph a:nth-child(2n) {
+    margin: 10px;
+    margin-right: 0px;
     float: left;
 }
 
-.content .paragraph:nth-child(2n+1) p {
-    width: 50%;
-    float: left;
-}
-.content .paragraph:nth-child(2n+1) img {
-    width: 50%;
+#images .content .paragraph a:nth-child(2n+1) {
+    margin: 10px;
     float: right;
-}*/
+}
+
+#images .content .paragraph a {
+    max-width: 49%;
+}
+@media screen and (max-width:1540px) {
+    #images .content .paragraph a {
+        max-width: 48%;
+    }
+    #images .content .paragraph a:nth-child(2n+1) {
+        margin: 5px;
+    }
+    #images .content .paragraph a:nth-child(2n) {
+        margin: 5px;
+        margin-right: 0px;
+    }
+}
+#images .content .paragraph img {
+    max-width: 100%;
+}
+
+
+@media print {
+    #menu {
+        display: none;
+    }
+    h2 {
+        bottom: 0;
+        left: 0;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .h2_hidden {
+        display: none;
+    }
+}
