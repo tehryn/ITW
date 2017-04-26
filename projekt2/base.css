@@ -176,41 +176,54 @@ h2 a {
     }
 }
 
-#images .content .paragraph .author{
-    display: block;
-    text-align: center;
-}
-
 #images .content .paragraph a:nth-child(2n) {
-    margin: 10px;
+    margin: 8px;
     margin-right: 0px;
     float: left;
 }
 
 #images .content .paragraph a:nth-child(2n+1) {
-    margin: 10px;
+    margin: 8px;
     float: right;
 }
 
 #images .content .paragraph a {
+    padding: 2px;
     max-width: 49%;
+    color: white;
+    background-color: rgb(0, 100, 50);
+    border-radius: 5px;
 }
+
+#images .content .paragraph a:hover {
+    background-color: rgb(0,130,50);
+}
+
+#images .content .paragraph img {
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+
+
+#images .content .paragraph .author {
+    display: block;
+    text-align: center;
+}
+
+
 @media screen and (max-width:1540px) {
     #images .content .paragraph a {
         max-width: 48%;
     }
     #images .content .paragraph a:nth-child(2n+1) {
-        margin: 5px;
+        margin: 3px;
     }
     #images .content .paragraph a:nth-child(2n) {
-        margin: 5px;
+        margin: 3px;
         margin-right: 0px;
     }
 }
-#images .content .paragraph img {
-    max-width: 100%;
-}
-
 
 @media print {
     #menu {
