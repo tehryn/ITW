@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Myslivecké sdružení Zachotín">
+    <link rel="stylesheet" href="base.css" type="text/css">
+	<title>MS Zachotín</title>
+    <script type="text/javascript">
+        var visibility = localStorage.getItem("visibility");
+        function display_author() {
+            if (visibility == "false") {
+                visibility = "true";
+                document.getElementById("author").innerHTML =
+                "<a href=\"javascript:display_author();\" id=\"about_me\">" +
+                "Skrýt informace o autorovi</a>" +
+                "<fieldset><legend>Autor</legend>" +
+                "Jméno: Matějka Jiří<br>" +
+                "Login: xmatej52<br>" +
+                "Email: <a href=\"mailto:xmatej52@stud.fit.vutbr.cz\">" +
+                "xmatej52@stud.fit.vutbr.cz</a><br></fieldset>";
+            }
+            else {
+                document.getElementById("author").innerHTML =
+                    "<a href=\"javascript:display_author();\" id=\"about_me\">" +
+                    "Zobrazit informace o autorovi</a>";
+                visibility = "false";
+            }
+            localStorage.setItem("visibility", visibility);
+        }
+        function start() {
+            if (visibility != "false") {
+                document.getElementById("author").innerHTML =
+                "<a href=\"javascript:display_author();\" id=\"about_me\">" +
+                "Skrýt informace o autorovi</a>" +
+                "<fieldset><legend>Autor</legend>" +
+                "Jméno: Matějka Jiří<br>" +
+                "Login: xmatej52<br>" +
+                "Email: <a href=\"mailto:xmatej52@stud.fit.vutbr.cz\">" +
+                "xmatej52@stud.fit.vutbr.cz</a><br></fieldset>";
+            }
+            else {
+                document.getElementById("author").innerHTML =
+                    "<a href=\"javascript:display_author();\" id=\"about_me\">" +
+                    "Zobrazit informace o autorovi</a>";
+            }
+        }
+    </script>
+</head>
+<body onload="start();">
+    <div id="page">
+        <header id="head">
+            <div id="top">
+                <h1><a href="./index.html"><span>Myslivecké sdružení Zachotín</span></a></h1>
+                <div id="top_images">
+                    <img src="./images/top01.jpg">
+                    <img src="./images/top02.jpg">
+                    <img src="./images/top03.jpg">
+                </div>
+                <div class="clear"></div>
+                <nav id="menu">
+                    <ul>
+                        <li class="current"><a href="./index.html">Úvod</a></li>
+                        <li><a href="./fotogalerie.html">Fotogalerie</a></li>
+                        <li><a href="./aktuality.html">Aktuality</a></li>
+                        <li><a href="./kontakt.html">Kontakt</a></li>
+                        <li><a href="./README.html">README</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="text">
+            <h2 id="uvod"><a href="#uvod"><span class="h2_hidden">Vítejte na stránkách</span> Myslivecké<span class="h2_hidden">ho</span> sdružení Zachotín</a></h2>
+            <div id="author"></div>
+            <div class="content">
+                <div class="paragraph">
+                    <h3>Maecenas fermentum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer
+                        pellentesque quam vel velit. Duis sapien nunc, commodo et, interdum
+                        suscipit, sollicitudin et, dolor. Maecenas libero. Temporibus autem
+                        quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                        eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                        Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae,
+                        justo. Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+                        molestiae non recusandae. Pellentesque arcu. Nemo enim ipsam
+                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus
+                        purus, vel sagittis velit mauris vel metus. Maecenas fermentum, sem
+                        in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus
+                        odio a lectus. Nulla non lectus sed nisl molestie malesuada.
+                    </p>
+                    <div class="text_images">
+                        <img src="./images/index01.jpg">
+                        <img src="./images/index02.jpg">
+                        <img src="./images/index03.jpg">
+                        <img src="./images/index04.jpg">
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <h3>Integer pellentesque</h3>
+                    <p>
+                        Integer pellentesque quam vel velit. In enim a arcu imperdiet
+                        malesuada. Nam quis nulla. Fusce aliquam vestibulum ipsum. Mauri
+                        dolor felis, sagittis at, luctus sed, aliquam non, tellus. Null
+                        accumsan, elit sit amet varius semper, nulla mauris mollis quam,
+                        tempor suscipit diam nulla vel leo. Itaque earum rerum hic tenetur a
+                        sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+                        consequatur aut perferendis doloribus asperiores repellat. Phasellus
+                        faucibus molestie nisl. Nullam rhoncus aliquam metus. Duis bibendum,
+                        lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis.
+                    </p>
+                    <div class="text_images">
+                        <img src="./images/index05.jpg">
+                        <img src="./images/index06.jpg">
+                        <img src="./images/index07.jpg">
+                        <img src="./images/index08.jpg">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="paragraph">
+                    <h3>Voluptatem</h3>
+                    <p>
+                        Duis pulvinar. Etiam commodo dui eget wisi. Phasellus rhoncus. Aliquam
+                        erat volutpat. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                        tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                        ab illo inventore veritatis.
+                    </p>
+                    <div class="text_images">
+                        <img src="./images/index09.jpg">
+                        <img src="./images/index10.jpg">
+                        <img src="./images/index11.jpg">
+                        <img src="./images/index12.jpg">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="paragraph">
+                    <h3>Vivamus luctus</h3>
+                    <p>
+                        Integer lacinia. Duis sapien nunc, commodo et, interdum suscipit,
+                        sollicitudin et, dolor. Nulla turpis magna, cursus sit amet, suscipit
+                        a, interdum id, felis. Aenean vel massa quis mauris vehicula lacinia.
+                        Praesent in mauris eu tortor porttitor accumsan. Pellentesque pretium
+                        lectus id turpis. Fusce nibh. Vivamus luctus egestas leo. Maecenas
+                        ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nullam at
+                        arcu a est sollicitudin euismod.
+                    </p>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
