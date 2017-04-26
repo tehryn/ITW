@@ -30,7 +30,7 @@
             localStorage.setItem("visibility", visibility);
         }
         function start() {
-            if (visibility != "false") {
+            if (visibility == "true") {
                 document.getElementById("author").innerHTML =
                 "<a href=\"javascript:display_author();\" id=\"about_me\">" +
                 "Skrýt informace o autorovi</a>" +
@@ -44,6 +44,7 @@
                 document.getElementById("author").innerHTML =
                     "<a href=\"javascript:display_author();\" id=\"about_me\">" +
                     "Zobrazit informace o autorovi</a>";
+                visibility = "false";
             }
         }
     </script>
