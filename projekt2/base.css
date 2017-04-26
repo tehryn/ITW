@@ -23,11 +23,11 @@ h1, h2, h3 {
 a {
     text-decoration: none;
     font-style: normal;
-    color: rgb(0, 75, 30);
+    color: rgb(0, 60, 30);
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .clear {
@@ -80,7 +80,12 @@ a:hover {
 
 #head #menu li{
     display: inline-block;
-    padding: 10px;
+    padding: 10px 15px;
+    margin-left: -6px;
+}
+
+#head #menu li:first-child {
+    margin-left: 0;
 }
 
 #head #menu li:hover{
@@ -88,8 +93,16 @@ a:hover {
     cursor: pointer;
 }
 
-#head #menu li a{
+#head #menu li.current {
+    background-color: rgb(0,160,50);
+}
+
+#head #menu li a {
     color: white;
+}
+
+#head #menu li a:hover {
+    text-decoration: none;
 }
 
 #top_images {
@@ -106,6 +119,7 @@ a:hover {
         }
     }
 }
+
 #top_images img {
     border-radius: 5px;
     height: 150px;
@@ -119,9 +133,11 @@ h2 {
     left: 160px;
     margin-bottom: -60px;
 }
-h2 a {
-    color: rgb(0, 75, 30);
+
+h2 a:hover {
+    text-decoration: none;
 }
+
 @media screen and (max-width:1630px){
     .h2_hidden {
         display: none;
@@ -139,6 +155,9 @@ h2 a {
     }
 }
 
+/*
+    Index.html
+ */
 .text_images {
     text-align: center;
 }
@@ -176,6 +195,9 @@ h2 a {
     }
 }
 
+/*
+    Fotogalerie.html
+ */
 #images .content .paragraph a:nth-child(2n) {
     margin: 8px;
     margin-right: 0px;
@@ -204,13 +226,10 @@ h2 a {
     margin-bottom: 0;
 }
 
-
-
 #images .content .paragraph .author {
     display: block;
     text-align: center;
 }
-
 
 @media screen and (max-width:1540px) {
     #images .content .paragraph a {
@@ -225,17 +244,86 @@ h2 a {
     }
 }
 
+/*
+    Kontakt.html
+ */
+#contact #contact_table {
+    margin: auto;
+    border: solid rgb(0, 100, 50) 3px;
+    border-collapse: collapse;
+}
+
+#contact #contact_table th {
+    border: solid rgb(0, 100, 50) 1px;
+    border-bottom-width: 3px;
+    padding: 0 2px;
+}
+
+#contact #contact_table td {
+    border: solid rgb(0, 100, 50) 1px;
+    padding: 0 5px;
+}
+
+#contact #contact_table a:hover {
+    text-decoration: underline;
+}
+
+/*
+    README.html
+ */
+#readme .paragraph #navrh_img {
+    text-align: center;
+}
+/*
+    Print
+ */
 @media print {
     #menu {
         display: none;
     }
+
+    #top_images img {
+        display: none;
+    }
+
+    #images .content .paragraph a {
+        max-width: 48%;
+    }
+
+    #images .content .paragraph a:nth-child(2n+1) {
+        margin: 3px;
+    }
+
+    #images .content .paragraph a:nth-child(2n) {
+        margin: 3px;
+        margin-right: 0px;
+    }
+
+    .text_images img:first-child {
+        display: none;
+    }
+
+    .text_images img {
+        max-width: 32%;
+        margin: 0 2px;
+    }
+
     h2 {
-        bottom: 0;
-        left: 0;
-        margin-bottom: 0px;
+        display: none;
+    }
+
+    #head h1 span {
+        visibility: visible;
+    }
+
+    #head h1 {
+        float: none;
         text-align: center;
     }
-    .h2_hidden {
-        display: none;
+
+    #head h1 a {
+        width:  auto;
+        height: auto;
+        border-radius: 100%;
     }
 }
