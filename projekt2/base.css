@@ -272,6 +272,9 @@ h2 a:hover {
 #readme .paragraph #navrh_img {
     text-align: center;
 }
+#readme .paragraph #navrh_img img {
+    max-width: 100%;
+}
 /*
     Print
  */
